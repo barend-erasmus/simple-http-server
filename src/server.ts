@@ -35,6 +35,8 @@ export function handle(lines: string[], socket: net.Socket): void {
 
     // Step: 5 - Url Rewrite
 
+    // STEP: 6 - Serving Files
+
     // STEP: X
     const bodyOfResponse: string = 'Hello World';
     socket.write(`HTTP/1.1 200 OK\r\ncontent-length: ${bodyOfResponse.length}\r\nconnection: close\r\n\r\n${bodyOfResponse}`);
