@@ -14,6 +14,10 @@ export function handle(lines: string[], socket: net.Socket): void {
 
     // STEP: 3 - Get Headers
 
+    // STEP: 4 - Multiple Domain on 1 Port
+
+    // Step: 5 - Url Rewrite
+
     // STEP: X
     const bodyOfResponse: string = 'Hello World';
     socket.write(`HTTP/1.1 200 OK\r\ncontent-length: ${bodyOfResponse.length}\r\nconnection: close\r\n\r\n${bodyOfResponse}`);
